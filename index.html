@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugeshwar | Freelance Web Developer</title>
+    <!-- Modern Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="name">Yugeshwar</h1>
+                <h2 class="title">Freelance Web Developer.</h2>
+                <p class="tagline">I build modern, responsive, and beautiful web experiences that help businesses grow.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Connect With Me</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="assets/Yugesh.JPG" alt="Yugeshwar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Yugeshwar, a passionate freelance web developer with a keen eye for clean, modern design. I specialize in turning complex problems into simple, beautiful, and intuitive interfaces.</p>
+                <p>Whether you're a startup looking for a new landing page or a small business needing a complete digital revamp, I have the skills to bring your vision to life using the latest web technologies.</p>
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="assets/project_1_mockup_1776670348902.png" alt="SaaS Analytics Dashboard">
+                    <div class="project-overlay">
+                        <a href="#" class="btn btn-sm btn-outline">Live Demo</a>
+                        <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>SaaS Analytics Dashboard</h3>
+                    <p>A comprehensive dark-mode dashboard tailored for real-time analytics data visualization, built with interactive charts and a minimalist interface.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>CSS</span><span>JS</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="assets/project_2_mockup_1776670366402.png" alt="E-commerce Landing Page">
+                    <div class="project-overlay">
+                        <a href="#" class="btn btn-sm btn-outline">Live Demo</a>
+                        <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce Landing Page</h3>
+                    <p>An elegant and conversion-focused landing page for a fashion brand, featuring soft pastel aesthetics and fluid responsive design.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>SCSS</span><span>JS</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="assets/project_3_mockup_1776670382462.png" alt="Task Manager App">
+                    <div class="project-overlay">
+                        <a href="#" class="btn btn-sm btn-outline">Live Demo</a>
+                        <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Kanban Task Manager</h3>
+                    <p>A light-mode Kanban board application enabling teams to organize tasks efficiently with drag-and-drop functionality.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>CSS</span><span>Vanilla JS</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Landing Pages</h3>
+                <p>High-converting, beautiful landing pages tailored for your marketing campaigns and product launches.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3>Small Business Websites</h3>
+                <p>Establishing digital presence with optimized, locally-focused websites helping small businesses attract more customers.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Making sure your website looks perfect and works flawlessly across desktops, tablets, and smartphones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="contact-subtitle">Currently available for freelance opportunities. Have a project in mind? Let's talk!</p>
+            
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/mbdqzjpp" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                <div id="form-status" class="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/yugamultiworks-svg" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+        </div>
+        <p class="copyright">&copy; 2026 Yugeshwar. Built with modern web tech.</p>
+    </footer>
+</body>
+</html>
