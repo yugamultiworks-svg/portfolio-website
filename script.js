@@ -27,7 +27,7 @@ window.addEventListener("scroll", () => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         // Adjust for navbar height (80px)
-        if (pageYOffset >= (sectionTop - 200)) {
+        if (window.scrollY >= (sectionTop - 200)) {
             current = section.getAttribute("id");
         }
     });
@@ -122,3 +122,65 @@ if (contactForm) {
         }, 5000);
     });
 }
+
+// Project estimator chips selection and text prefill
+const serviceChips = document.querySelectorAll("#service-chips .chip-btn");
+const messageInput = document.getElementById("message");
+const servicesHiddenInput = document.getElementById("selected-services-input");
+
+if (serviceChips.length > 0 && messageInput) {
+    serviceChips.forEach(chip => {
+        chip.addEventListener("click", () => {
+            chip.classList.toggle("selected");
+            
+            const selectedServices = [];
+            serviceChips.forEach(c => {
+                if (c.classList.contains("selected")) {
+                    selectedServices.push(c.getAttribute("data-value"));
+                }
+            });
+
+            if (servicesHiddenInput) {
+                servicesHiddenInput.value = selectedServices.join(", ");
+            }
+
+            if (selectedServices.length > 0) {
+                messageInput.value = `Hi Yugeshwar, I'm interested in building a project involving: ${selectedServices.join(", ")}. Let's connect to discuss timelines and details!`;
+            } else {
+                messageInput.value = "";
+            }
+        });
+    });
+}
+
+// Project Inquiry click hook to prefill message
+const projectInquiryButtons = document.querySelectorAll(".project-overlay a");
+if (projectInquiryButtons.length > 0 && messageInput) {
+    projectInquiryButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const projectName = btn.getAttribute("data-project");
+            if (!projectName) return;
+
+            // Auto-select corresponding chip
+            let matchedChip = "";
+            if (projectName.includes("Layout")) matchedChip = "Landing Page";
+            else if (projectName.includes("Promo")) matchedChip = "Figma to HTML";
+            else if (projectName.includes("Kanban")) matchedChip = "Personal Portfolio";
+
+            serviceChips.forEach(c => {
+                if (c.getAttribute("data-value") === matchedChip) {
+                    c.classList.add("selected");
+                } else {
+                    c.classList.remove("selected");
+                }
+            });
+
+            if (servicesHiddenInput) {
+                servicesHiddenInput.value = matchedChip;
+            }
+
+            messageInput.value = `Hi Yugeshwar, I am impressed by your '${projectName}' and would love to build a similar project for my business. Let's schedule a call!`;
+        });
+    });
+}
+
