@@ -12,10 +12,15 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Ambient Glow Backgrounds -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#hero" class="logo"></a>
+            <a href="#hero" class="logo">Yugeshwar</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -36,11 +41,16 @@
             <div class="hero-content">
                 <p class="greeting">Hi, I'm</p>
                 <h1 class="name">Yugeshwar</h1>
-                <h2 class="title">Freelance Web Developer.</h2>
-                <p class="tagline">I build modern, responsive, and beautiful web experiences that help businesses grow.</p>
+                <h2 class="title">Junior Web Developer.</h2>
+                <p class="tagline">I build clean, responsive, and modern websites. Passionate about coding pixel-perfect layouts and solving front-end challenges.</p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-primary">Connect With Me</a>
                     <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="assets/Yugesh.JPG" alt="Yugeshwar">
                 </div>
             </div>
         </div>
@@ -51,14 +61,14 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Hello! I'm Yugeshwar, a passionate freelance web developer with a keen eye for clean, modern design. I specialize in turning complex problems into simple, beautiful, and intuitive interfaces.</p>
-                <p>Whether you're a startup looking for a new landing page or a small business needing a complete digital revamp, I have the skills to bring your vision to life using the latest web technologies.</p>
+                <p>Hello! I'm Yugeshwar, a passionate self-taught junior web developer. I recently started my coding journey and focus on building high-quality interfaces with clean, semantic markup.</p>
+                <p>I love taking on PSD or Figma designs and converting them into fully responsive, interactive web pages. I write clean CSS and solid vanilla JavaScript, focusing on delivering fast-loading, accessible pages at a competitive rate for my first client projects.</p>
                 <div class="skills">
                     <span class="skill-tag">HTML5</span>
                     <span class="skill-tag">CSS3</span>
                     <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Responsive Design</span>
                     <span class="skill-tag">Figma</span>
                 </div>
             </div>
@@ -68,19 +78,19 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
+         <div class="projects-grid">
             <!-- Project 1 -->
             <article class="project-card">
                 <div class="project-img-wrapper">
-                    <img src="assets/project_1_mockup_1776670348902.png" alt="SaaS Analytics Dashboard">
+                    <span class="project-badge">Concept</span>
+                    <img src="assets/project_1_mockup_1776670348902.png" alt="SaaS Analytics Dashboard Concept">
                     <div class="project-overlay">
-                        <a href="#" class="btn btn-sm btn-outline">Live Demo</a>
-                        <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+                        <a href="#contact" class="btn btn-sm btn-outline" data-project="SaaS Dashboard Layout">Inquire Now</a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>SaaS Analytics Dashboard</h3>
-                    <p>A comprehensive dark-mode dashboard tailored for real-time analytics data visualization, built with interactive charts and a minimalist interface.</p>
+                    <h3>SaaS Dashboard Layout</h3>
+                    <p>A clean static layout concept for an analytics dashboard. Developed to practice CSS Grid positioning, custom layouts, and clean visual themes.</p>
                     <div class="tech-stack">
                         <span>HTML</span><span>CSS</span><span>JS</span>
                     </div>
@@ -90,15 +100,15 @@
             <!-- Project 2 -->
             <article class="project-card">
                 <div class="project-img-wrapper">
-                    <img src="assets/project_2_mockup_1776670366402.png" alt="E-commerce Landing Page">
+                    <span class="project-badge">Responsive Page</span>
+                    <img src="assets/project_2_mockup_1776670366402.png" alt="Fashion Landing Page">
                     <div class="project-overlay">
-                        <a href="#" class="btn btn-sm btn-outline">Live Demo</a>
-                        <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+                        <a href="#contact" class="btn btn-sm btn-outline" data-project="Product Promo Page">Inquire Now</a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>E-commerce Landing Page</h3>
-                    <p>An elegant and conversion-focused landing page for a fashion brand, featuring soft pastel aesthetics and fluid responsive design.</p>
+                    <h3>Product Promo Page</h3>
+                    <p>A responsive fashion product promotional landing page. Built to practice typographic hierarchy, smooth hover transitions, and mobile alignment.</p>
                     <div class="tech-stack">
                         <span>HTML</span><span>SCSS</span><span>JS</span>
                     </div>
@@ -108,15 +118,15 @@
             <!-- Project 3 -->
             <article class="project-card">
                 <div class="project-img-wrapper">
+                    <span class="project-badge">JS Web App</span>
                     <img src="assets/project_3_mockup_1776670382462.png" alt="Task Manager App">
                     <div class="project-overlay">
-                        <a href="#" class="btn btn-sm btn-outline">Live Demo</a>
-                        <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+                        <a href="#contact" class="btn btn-sm btn-outline" data-project="Interactive Kanban Board">Inquire Now</a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Kanban Task Manager</h3>
-                    <p>A light-mode Kanban board application enabling teams to organize tasks efficiently with drag-and-drop functionality.</p>
+                    <h3>Interactive Kanban Board</h3>
+                    <p>A fully functional tasks kanban board. Developed with pure vanilla JS to demonstrate event handling, dynamic DOM creation, and local storage data saving.</p>
                     <div class="tech-stack">
                         <span>HTML</span><span>CSS</span><span>Vanilla JS</span>
                     </div>
@@ -131,18 +141,18 @@
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon">🌐</div>
-                <h3>Landing Pages</h3>
-                <p>High-converting, beautiful landing pages tailored for your marketing campaigns and product launches.</p>
+                <h3>Figma to HTML</h3>
+                <p>I take your Figma, Adobe XD, or Sketch designs and turn them into pixel-perfect, clean, and responsive HTML/CSS markup.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">💻</div>
-                <h3>Small Business Websites</h3>
-                <p>Establishing digital presence with optimized, locally-focused websites helping small businesses attract more customers.</p>
+                <h3>Landing Pages</h3>
+                <p>High-quality, simple single-page websites to showcase your services, profile, or product launch at affordable entry-level rates.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">📱</div>
-                <h3>Responsive Design</h3>
-                <p>Making sure your website looks perfect and works flawlessly across desktops, tablets, and smartphones.</p>
+                <h3>HTML/CSS Debugging</h3>
+                <p>Struggling with a layout bug or a mobile responsiveness issue? I will clean up your stylesheet and make sure it displays correctly on all screens.</p>
             </div>
         </div>
     </section>
@@ -154,6 +164,16 @@
             <p class="contact-subtitle">Currently available for freelance opportunities. Have a project in mind? Let's talk!</p>
             
             <form id="contactForm" class="contact-form" action="https://formspree.io/f/mbdqzjpp" method="POST">
+                <input type="hidden" id="selected-services-input" name="services" value="">
+                <div class="estimator-group">
+                    <span class="estimator-label">Select Service Interest</span>
+                    <div class="chips-container" id="service-chips">
+                        <button type="button" class="chip-btn" data-value="Figma to HTML">Figma to HTML</button>
+                        <button type="button" class="chip-btn" data-value="Landing Page">Landing Page</button>
+                        <button type="button" class="chip-btn" data-value="CSS/JS Bug Fixing">CSS/JS Bug Fixing</button>
+                        <button type="button" class="chip-btn" data-value="Personal Portfolio">Personal Portfolio</button>
+                    </div>
+                </div>
                 <div class="form-group">
                     <input type="text" id="name" name="name" required placeholder="Your Name">
                 </div>
